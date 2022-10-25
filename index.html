@@ -54,12 +54,21 @@
     let mcqValue = 25;
     let frq1Value = 4;
     let frq2Value = 4;
+    let frq3Value = 4;
+    let frq4Value = 4;
+    let frq5Value = 4;
+    let frq6Value = 4;
     let compScore  = 50;
     let score = 3;
     //Max Variables
-    let mcqMax = 50;
-    let frqMax = 14;
+    let mcqMax =   50;
+    let frqMax =   14;
     let totalMax = 100;
+    //Score Variables
+    let five =  85;
+    let four =  65;
+    let three = 45;
+    let two =   25;
 
     //Multiple Choice Score
     function mcqScore(value) {
@@ -107,13 +116,13 @@
     }
     function apScore(){
         //Checking what AP Score you got
-        if(compScore > 84)
+        if(compScore >= five)
             score = 5;
-        else if(compScore > 64)
+        else if(compScore >= four)
             score = 4;
-        else if(compScore > 44)
+        else if(compScore >= three)
             score = 3;
-        else if(compScore > 24)
+        else if(compScore >= two)
             score = 2;
         else 
             score = 1;
@@ -128,16 +137,16 @@
         //Changes the background color if thats wanted
         if(type === "background")
         {
-            if(value > 84)
+            if(value >= five)
                 document.getElementById(id).style.backgroundColor = "#68855F"; 
 
-            else if(value > 64)
+            else if(value >= four)
                 document.getElementById(id).style.backgroundColor = "#95a66d"; 
 
-            else if(value > 44)
+            else if(value >= three)
                 document.getElementById(id).style.backgroundColor = "#ffd166"; 
             
-            else if(value > 24)
+            else if(value >= two)
                 document.getElementById(id).style.backgroundColor = "#f4a261"; 
                 
             else 
@@ -146,16 +155,16 @@
         //Changes Slider color
         else if(type === "slider")
         {
-            if(value > 84)
+            if(value >= five)
                 document.getElementById(id).style.outlineColor = "#68855F"; 
 
-            else if(value > 64)
+            else if(value >= four)
                 document.getElementById(id).style.outlineColor = "#95a66d"; 
 
-            else if(value > 44)
+            else if(value >= three)
                 document.getElementById(id).style.outlineColor = "#ffd166"; 
             
-            else if(value > 24)
+            else if(value >= two)
                 document.getElementById(id).style.outlineColor = "#f4a261"; 
                 
             else 
@@ -164,16 +173,16 @@
         // Only other option is text so it changes that
         else 
         {
-            if(value > 84)
+            if(value >= five)
                 document.getElementById(id).style.color = "#68855F"; 
 
-            else if(value > 64)
+            else if(value >= four)
                 document.getElementById(id).style.color = "#95a66d"; 
 
-            else if(value > 44)
+            else if(value >= three)
                 document.getElementById(id).style.color = "#ffd166"; 
 
-            else if(value > 24)
+            else if(value >= two)
                 document.getElementById(id).style.color = "#f4a261"; 
 
             else 
