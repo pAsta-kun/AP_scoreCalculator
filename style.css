@@ -6,6 +6,7 @@ body{
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
+  padding-left: 50px;
 }
 .main{
   display: flex;
@@ -17,7 +18,7 @@ body{
   justify-content: space-evenly;
 
 }
-#mcq1_slider, #frq1_slider, #frq2_slider{
+input{
   width: 400px;
   height: 20px;
   -webkit-appearance: none;
@@ -28,11 +29,14 @@ body{
   border-radius: 15px;
   overflow: hidden;
 }
-
+#mcq1_slider::-webkit-slider-thumb:hover , #frq1_slider::-webkit-slider-thumb:hover ,#frq2_slider::-webkit-slider-thumb:hover {
+  width: 17px;
+  height: 17px;
+}
 #mcq1_slider::-webkit-slider-thumb, #frq1_slider::-webkit-slider-thumb,#frq2_slider::-webkit-slider-thumb  {
-    -webkit-appearance: none;
-  width: 15px;
-  height: 15px;
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background: rgb(63, 63, 63);
   cursor: pointer;
